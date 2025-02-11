@@ -16,13 +16,10 @@ RUN apt-get update && apt-get install -y \
     clang-tidy \
     valgrind \
     && rm -rf /var/lib/apt/lists/*
-
-# Maak een werkdirectory aan
+    
 WORKDIR /env_setup_workspace
-
-RUN mkdir build
-
+COPY . .
+WORKDIR build
 RUN cmake ..
-WORKDIR /env_setup_workspace/build
 RUN make
-CMD ["./hello_world"]
+CMD ["./hello_world"] CopyRetry
