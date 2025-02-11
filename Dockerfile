@@ -22,7 +22,7 @@ WORKDIR /env_setup_workspace
 
 RUN mkdir build
 
-WORKDIR /env_setup_workspace/build
 RUN cmake ..
+WORKDIR /env_setup_workspace/build
 RUN make
 CMD ["./hello_world"]
