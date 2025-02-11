@@ -1,3 +1,0 @@
-/workspaces/TI-S4-VOS/build/CMakeFiles/hello_world.dir
-/workspaces/TI-S4-VOS/build/CMakeFiles/edit_cache.dir
-/workspaces/TI-S4-VOS/build/CMakeFiles/rebuild_cache.dir

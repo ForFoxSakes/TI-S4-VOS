@@ -1,7 +1,0 @@
-[
-{
-  "directory": "/workspaces/TI-S4-VOS/build",
-  "command": "/usr/bin/g++   -Wall -Wextra -Werror -std=c++17 -o CMakeFiles/hello_world.dir/hello_world.cpp.o -c /workspaces/TI-S4-VOS/hello_world.cpp",
-  "file": "/workspaces/TI-S4-VOS/hello_world.cpp"
-}
-]
