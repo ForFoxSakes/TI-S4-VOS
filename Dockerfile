@@ -20,7 +20,8 @@ RUN apt-get update && apt-get install -y \
 # Maak een werkdirectory aan
 WORKDIR /env_setup_workspace
 
-COPY . . 
+RUN mkdir build
+
 WORKDIR /env_setup_workspace/build
 RUN cmake ..
 RUN make
