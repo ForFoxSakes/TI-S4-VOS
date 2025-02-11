@@ -25,4 +25,4 @@ RUN mkdir build
 WORKDIR /env_setup_workspace/build
 RUN cmake ..
 RUN make
-CMD["./hello_world"]
+CMD ["./hello_world"]
