@@ -17,9 +17,11 @@ RUN apt-get update && apt-get install -y \
     valgrind \
     && rm -rf /var/lib/apt/lists/*
 
-WORKDIR /env_setup_workspace
-COPY . .
-WORKDIR build
+# Maak de build directory aan
+RUN mkdir /workspaces/TI-S4-VOS/build
+
+# Stel de werkdirectory in op de build directory
+WORKDIR /workspaces/TI-S4-VOS/build
 RUN cmake ..
 RUN make
 
